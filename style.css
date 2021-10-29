@@ -1,0 +1,149 @@
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0; 
+    background: rgba(4, 77, 22, 0.445);
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: large;
+  }
+  
+  .navigation a:hover {
+    background: #1565C0;
+    font-weight: 900;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+      
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: black;
+  }
+  
+img{
+  width: 250px;
+  height: 150px;
+  object-position: bottom;
+  object-fit: cover;
+  padding: 5px;
+}
+
+img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container_index_card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+body#style-index{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+background:rgb(205, 50, 71);
+}
+
+.index_card{
+  background-color: white;
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.index-card-image{
+  background-color: aqua;
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-1{
+  background-image: url('1.jpg');
+
+}
+
+.card-2{
+  background-image: url('2.jpg');
+
+}
+.card-3{
+  background-image: url('3.jpg');
+
+}
+
+.card-4{
+  background-image: url('4.jpg');
+
+}
+
+.index_card a{
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+  display:block;
+  text-align: center;
+  border-radius: 0px 0px 15px 15px;
+  text-decoration: none;
+}
+
+.index_card h2{
+  text-align: center;
+  color: darkred;
+}
+
+.index_card p{
+  text-align: center;
+}
+
+.index_card:hover{
+  background-color: darkgray;
+  color: white;
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+
+
+
+
